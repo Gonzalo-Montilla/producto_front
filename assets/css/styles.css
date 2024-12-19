@@ -90,5 +90,30 @@ input {
     margin-bottom: 10px;
 }
 
+.card {
+    transition: transform 0.2s;
+}
 
+.card:hover {
+    transform: scale(1.05);
+}
+
+form {
+    width: 450px;
+}
+
+#card-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+}
+
+.card img {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    object-fit: contain;
+}
 
